@@ -1,0 +1,9 @@
+.co-datepicker-inner-wrapper {
+    ::v-deep > div {
+        .vdp-datepicker__clear-button {
+            line-height: 0;
+            top: 50%;
+            margin-top: -11.5px;
+        }
+    }
+}

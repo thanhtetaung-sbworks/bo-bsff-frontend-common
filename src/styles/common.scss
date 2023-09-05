@@ -1,0 +1,72 @@
+//common class
+.co-reset-appearance {
+  @include co-reset-appearance;
+}
+
+.co-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.co-gray-tab {
+  border: 1px solid #eee;
+  background: #f4f5f6;
+  border-radius: 4px 4px 0 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  ::v-deep .co-item {
+    color: $co-body-text-color;
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin-bottom: -1px;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    &.co-active {
+      font-weight: 700;
+      color: #1f2021;
+      border-bottom: 3px solid $co-primary;
+      .co-text-wrap {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .co-text-wrap {
+      &:hover {
+        text-decoration: underline;
+      }
+      a {
+        color: $co-body-text-color;
+        text-decoration: none;
+        display: flex;
+        img {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.co-panel {
+  ::v-deep .co-std-select {
+    font-size: 12px;
+  }
+}
+
+//Padding
+.box-x-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.box-y-padding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

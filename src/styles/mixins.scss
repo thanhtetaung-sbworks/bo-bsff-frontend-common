@@ -1,0 +1,5 @@
+@mixin co-reset-appearance {
+    appearance: none; /* Standard property */
+    -webkit-appearance: none; /* Safari and Chrome */
+    -moz-appearance: none; /* Firefox */
+}
